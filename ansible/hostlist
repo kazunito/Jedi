@@ -1,0 +1,9 @@
+[localhost]
+192.168.179.9
+
+[all:vars]
+ansible_ssh_port=22
+ansible_user=nito
+ansible_pass=nito00
+ansible_sudo_pass=nito00
+
