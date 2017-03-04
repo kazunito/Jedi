@@ -3,3 +3,21 @@
   remote_user: nito
   roles:
      - nginx
+     - wildfly
+
+  vars:
+
+# nginx.confファイルのオーナー
+    nginx_owner: root                    
+
+# nginx.confファイルのグループ
+    nginx_group: root              
+    nginx_mode: 644
+    nginx_src: /tmp/index.html
+    nginx_dst: /var/www/html/index.html
+
+    wildfly_owner: root
+    wildfly_group: root
+    wildfly_mode: 644
+    wildfly_src: /tmp/index.html
+    wildfly_dst: /var/www/html/index.html
