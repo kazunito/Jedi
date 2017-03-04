@@ -1,0 +1,3 @@
+以下のように指定して実行してください。
+
+# rake spec SPEC_OPTS="--format ServerspecDebugFormatter --require ./serverspec_debug_formatter.rb"
