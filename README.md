@@ -1,5 +1,2 @@
 # Jedi
-以下のようにして、実行します。
-ansible-playbook  -i hostlist front.yml -vv
-ローカルで実行する場合は
-ansible-playbook  -i hostlist front.yml -c local -vv
+勝手に作っている自動構築用の環境
