@@ -4,6 +4,7 @@
     name: nginx
     state: stopped
 
+
 # Nginxの設定ファイルをコピー
 - name: config file copy
   copy: src={{ nginx_src }} dest={{ nginx_dst }} owner={{ nginx_owner }} group={{ nginx_group }} mode={{ nginx_mode }}
@@ -13,3 +14,4 @@
   service:
     name: nginx
     state: started
+
