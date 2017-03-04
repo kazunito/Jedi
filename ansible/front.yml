@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: all
   become: yes
   remote_user: nito
   roles:
@@ -6,18 +6,24 @@
      - wildfly
 
   vars:
-
 # nginx.confファイルのオーナー
     nginx_owner: root                    
-
 # nginx.confファイルのグループ
     nginx_group: root              
+# nginx.confファイルのモード
     nginx_mode: 644
+# nginx.confファイルのコピー元
     nginx_src: /tmp/index.html
+# nginx.confファイルのコピー先
     nginx_dst: /var/www/html/index.html
 
+# domain.xmlファイルのオーナー
     wildfly_owner: root
+# domain.xmlファイルのグループ
     wildfly_group: root
+# domain.xmlファイルのモード
     wildfly_mode: 644
+# domain.xmlファイルのコピー元
     wildfly_src: /tmp/index.html
+# domain.xmlファイルのコピー先
     wildfly_dst: /var/www/html/index.html

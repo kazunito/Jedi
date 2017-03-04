@@ -1,5 +1,5 @@
-[localhost]
-192.168.179.9
+[hostlist]
+localhost
 
 [all:vars]
 ansible_ssh_port=22
