@@ -1,4 +1,4 @@
 --color
-#--format documentation
---format ServerspecDebugFormatter
---require ./serverspec_debug_formatter.rb
+--format documentation
+#--format ServerspecDebugFormatter
+#--require ./serverspec_debug_formatter.rb

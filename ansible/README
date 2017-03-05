@@ -2,3 +2,7 @@
 ansible-playbook  -i hostlist front.yml -vv
 ローカルで実行する場合は
 ansible-playbook  -i hostlist front.yml -c local -vv
+
+実行ログを可変にするには、以下の環境変数を変更する。
+export ANSIBLE_LOG_PATH=/XXX/XXX/ファイル名
+
