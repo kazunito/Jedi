@@ -1,0 +1,20 @@
+# Zabbix agentサービスの停止
+- name: Nginx stop
+  service:
+    name: nginx
+    state: stopped
+
+
+# Zabbix agentの設定ファイルの設定
+- name: Set Zabbix Server address
+  replace: >
+    dest={{ zabbix_config }}
+    regexp={{ zabbix_regexp }}
+    replace= {{ zabbix_replace }}
+
+# Zabbix agentサービスの起動
+- name: Nginx start
+  service:
+    name: nginx
+    state: started
+
