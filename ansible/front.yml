@@ -27,3 +27,11 @@
     wildfly_src: /tmp/index.html
 # domain.xmlファイルのコピー先
     wildfly_dst: /var/www/html/index.html
+
+# zabbix agen設定ファイル
+   zabbix_config: 
+# zabbix agent設定ファイル変更対象文字列
+   zabbix_regexp: 
+# zabbix agent設定ファイル変更文字列
+   zabbix_replace:
+
