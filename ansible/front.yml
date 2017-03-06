@@ -4,6 +4,7 @@
   roles:
      - nginx
      - wildfly
+     - zabbix
 
   vars:
 # nginx.confファイルのオーナー
@@ -27,3 +28,11 @@
     wildfly_src: /tmp/index.html
 # domain.xmlファイルのコピー先
     wildfly_dst: /var/www/html/index.html
+
+# zabbix agen設定ファイル
+   zabbix_config: /etc/zabbix/zabbix_agent/zabbix_agent.conf
+# zabbix agent設定ファイル変更対象文字列
+   zabbix_regexp: Server=127.0.0.1
+# zabbix agent設定ファイル変更文字列
+   zabbix_replace: Server=XXX.XXX.XXX.XXX
+
