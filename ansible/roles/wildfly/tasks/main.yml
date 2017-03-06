@@ -1,0 +1,15 @@
+# WildFlyサービスの停止
+- name: WildFly stop
+  service:
+    name: wildfly
+    state: stopped
+
+# WildFlyのdomain設定ファイルをコピー
+- name: config file copy
+  copy: src={{ wildfly_src }} dest={{ wildfly_dst }} owner={{ wildfly_owner }} group={{ wildfly_group }} mode={{ wildfly_mode }}
+
+# WildFlyサービスの起動
+- name: WildFly start
+  service:
+    name: wildfly
+    state: started
