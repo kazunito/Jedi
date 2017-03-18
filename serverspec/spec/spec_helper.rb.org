@@ -21,13 +21,6 @@ options = Net::SSH::Config.for(host)
 options[:user] ||= Etc.getlogin
 
 set :host,        options[:host_name] || host
-
-if ENV['ASK_LOGIN_PASSWORD']
-  options[:password] = ask("\nEnter login password: ") { |q| q.echo = false }
-else
-  options[:password] = ENV['LOGIN_PASSWORD']
-end
-
 set :ssh_options, options
 
 # Disable sudo
