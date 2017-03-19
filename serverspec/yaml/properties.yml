@@ -1,0 +1,6 @@
+www.untangle-user.net:
+  :roles:
+    - check
+    - net
+  :server_cpu: 2
+

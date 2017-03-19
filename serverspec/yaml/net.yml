@@ -1,0 +1,4 @@
+www.untangle-user.net:
+  :roles:
+    - net
+  :server_id: 100
