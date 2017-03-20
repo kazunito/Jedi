@@ -3,4 +3,19 @@
 # rake spec SPEC_OPTS="--format ServerspecDebugFormatter --require ./serverspec_debug_formatter.rb"
 
 role運用を指定すると
-# rake serverspec:all
+# rake serverspec:all 又は　rake spec
+
+個別に指定する場合は
+# rake serverspec:ホスト名（ただし、.で名前が切れるのでYAML指定時に注意が必要）
+
+
+実行できるタスクを確認するには
+# rake --task
+rake serverspec:www  # Run serverspec to www.xxxx.xxxx
+rake spec            # Run serverspec to all hosts
+  
+
+
+
+
+
